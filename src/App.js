@@ -8,8 +8,10 @@ import "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
+const API_KEY = process.env.API_KEY;
+
 firebase.initializeApp({
-  apiKey: process.env.API_KEY,
+  apiKey: `${API_KEY}`,
   authDomain: "fast-chat-b94a2.firebaseapp.com",
   projectId: "fast-chat-b94a2",
   storageBucket: "fast-chat-b94a2.appspot.com",
